@@ -51,3 +51,11 @@ function loadSlider() {
         }
     })
 }
+
+// Hamburguer Menu
+const hamburguer = document.querySelector('#hamburguer')
+const navUL = document.querySelector('#navUL')
+
+hamburguer.addEventListener('click', () => {
+    navUL.classList.toggle('show')
+})

@@ -117,7 +117,7 @@ nav {
 }
 
 .pesquisa input {
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     height: 25px;
     outline: none;
     padding: 5px 25px 5px 5px;
@@ -131,9 +131,13 @@ nav {
 
 .pesquisa img {
     position: absolute;
-    right: 2.7px;
-    top: 2.7px;
-    width: 18px;
+    right: 5px;
+    top: 5px;
+    width: 15px;
+}
+
+.hamburguer {
+    display: none;
 }
 
 /* Parte do Conteudo do Site */
@@ -283,4 +287,162 @@ nav {
     width: 20px;
     height: 15px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .topo {
+        margin: 40px 0;
+        justify-content: none;
+    }
+
+    .logo {
+        position: absolute;
+    }
+
+    .navegacao {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pesquisa {
+       display: none;
+    }
+
+    #navUL {
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+
+    .navLinks {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #ccc;
+    }
+
+    #navUL.show {
+        display: block;
+    }
+
+    .navLinks ul {
+        flex-direction: column;
+    }
+
+    .navLinks ul li {
+        margin: 20px;
+    }
+
+    .login-cadastro a:first-child {
+        font-size: 15px;
+        position: absolute;
+        right: 0;
+        top: 31px;
+    }
+
+    .login-cadastro a:last-child {
+        display: none;
+    }
+
+    .bandeiras a > img {
+        width: 20px;
+        height: 13px;
+    }
+
+    .img-BR {
+        right: 55px;
+    }
+    
+    .img-EUA {
+        right: 55px;
+    }
+
+    .bandeiras button {
+        right: 40px;
+    }
+
+    .bandeiras button img {
+        width: 10px;
+        height: 7px;
+    }
+
+    .hamburguer {
+        display: block;
+        margin: 20px;
+        position: absolute;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hamburguer img {
+        width: 25px;
+    }
+
+    .img-slider {
+        display: none;
+    }
+
+    /* Parte do Conteudo */
+    .selecoes {
+        margin: 100px 50px;
+        flex-direction: column;
+    }
+
+    .texto {
+        margin: 0 20px;
+    }
+
+    .galeria {
+        margin: 0;
+    }
+
+    .paisagemCampo1 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .paisagemCampo2 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .paisagemCampo1 img {
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    .paisagemCampo2 img {
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    /* Parte do rodapé */
+    .rodape {
+        padding: 20px;
+    }
+
+    .rodape ul:first-child {
+        display: none;
+    }
+
+    .rodape ul li p {
+        font-size: 12px;
+    }
+
+    .rodape ul li a {
+        font-size: 12px;
+    }
+
+    .rodape ul li h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .rodape ul li img {
+        width: 12px;
+        height: 10px;
+    }
 }
