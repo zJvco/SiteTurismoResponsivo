@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Parte do Logo, Navegação e Login  */
+.topo {
+    margin: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    cursor: default;
+    color: #5499C7;
+    font-family: "Poppins";
+    font-weight: normal;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.bandeiras {
+    position: relative;
+    top: -8px;
+    right: 30px;
+}
+
+.bandeiras a > img {
+    width: 25px;
+    height: 15px;
+}
+
+.img-BR {
+    position: absolute;
+    right: 7px;
+}
+
+.img-EUA {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 7px;
+}
+
+.bandeiras button {
+    position: absolute;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bandeiras button img {
+    width: 13px;
+    height: 8px;
+}
+
+.login-cadastro a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.login-cadastro a:hover {
+    color: #5499C7;
+}
+
+.navegacao {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 80%;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navLinks {
+    width: 80%;
+}
+
+.navLinks ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.navLinks ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #5499C7;
+    font-family: "Poppins";
+}
+
+.navLinks ul li a:hover {
+    color: #333;
+}
+
+.pesquisa {
+    position: relative;
+}
+
+.pesquisa input {
+    border: 1px solid #000;
+    height: 25px;
+    outline: none;
+    padding: 5px 25px 5px 5px;
+    font-size: 14px;
+    width: 250px;
+}
+
+.pesquisa input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.pesquisa img {
+    position: absolute;
+    right: 2.7px;
+    top: 2.7px;
+    width: 18px;
+}
+
+/* Parte do Conteudo do Site */
+.img-slider {
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #bdbdbd;
+}
+
+.imagens {
+    display: flex;
+}
+
+.imagens img {
+    width: 100%;
+    height: 650px;
+}
+
+.seta-esquerda {
+    transform: rotate(180deg);
+    width: 60px;
+    position: absolute;
+    top: 43%;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.seta-direita {
+    width: 60px;
+    position: absolute;
+    top: 43%;
+    right: 0;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.seta-esquerda:hover {
+    opacity: 0.6;
+}
+
+.seta-direita:hover {
+    opacity: 0.6;
+}
+
+.selecoes {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 50px 400px;
+}
+
+.selecione {
+    padding: 60px;
+    border: 1px solid #ccc;
+    color: #5499C7;
+}
+
+.selecione h3 {
+    font-family: "Poppins";
+}
+
+.texto {
+    margin: 50px 400px;
+    border-bottom: 1px solid #ccc;
+}
+
+.texto ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+
+.texto ul li {
+    margin: 30px;
+    font-family: "Poppins";
+    letter-spacing: 2px;
+}
+
+.texto ul li h3 {
+    margin-bottom: 20px;
+    color: #5499C7;
+}
+
+.texto ul li p {
+    text-align: justify;
+}
+
+.galeria {
+    margin: 50px 200px;
+}
+
+.galeria h2 {
+    text-align: center;
+    margin: 50px;
+    font-family: "Poppins";
+    color: #5499C7;
+}
+
+.paisagemCampo1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.paisagemCampo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.copyright {
+    text-align: center;
+    margin: 20px;
+    color: #acacac;
+}
+
+/* Parte do Rodapé */
+.rodape {
+    background-color: #5499C7;
+    display: flex;
+    padding: 30px 220px;
+    justify-content: space-between;
+}
+
+.rodape ul {
+    list-style: none;
+    font-family: "Poppins";
+}
+
+.rodape ul li {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.rodape ul li h3 {
+    margin-bottom: 20px;
+}
+
+.rodape ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rodape ul li img {
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+}

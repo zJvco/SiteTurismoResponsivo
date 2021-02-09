@@ -4,106 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Meu Site</title>
+    <link rel="stylesheet" href="styleEUA.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="scriptEUA.js" defer></script>
+    <title>My Website</title>
 </head>
-<body>
+<body onload="loadSlider()">
     <header>
         <div class="topo">
-            <div class="logo">
-                <h1>Meu Site</h1>
+            <div class="navegacao">
+                <div class="logo">
+                    <h1>My Website</h1>
+                </div>
+                <nav>
+                    <div class="navBar">
+                        <div class="navLinks">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Lodging</a></li>
+                                <li><a href="#">Travels</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Form</a></li>
+                            </ul>
+                        </div>
+                        <div class="pesquisa">
+                            <input type="search" name="pesquisa" id="pesquisa" placeholder="Search">
+                            <img src="../img/lupa-img.png">
+                        </div>
+                    </div>
+                </nav>
             </div>
             <div class="login">
                 <div class="bandeiras">
-                    <a href="index.html"><img src="img/bandeira-BR.png"></a>
-                    <a href="indexEUA.html"><img src="img/bandeira-EUA.png"></a>
-                    <button class="seta"><img src="img/seta-img.png"></button>
+                    <a class="img-EUA" href="indexEUA.html"><img src="../img/bandeira-EUA.png"></a>
+                    <a class="img-BR" href="../langBR/index.html"><img src="../img/bandeira-BR.png"></a>
+                    <button class="seta"><img src="../img/seta-img.png"></button>
                 </div>
-                <a href="#">LOGIN</a>
-                <a href="#">CADASTRAR-SE</a>
+                <div class="login-cadastro">
+                    <a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                </div>
             </div>
         </div>
     </header>
-    <nav>
-        <div class="navBar">
-            <div class="navLinks">
-                <ul>
-                    <li><a href="#">Casa</a></li>
-                    <li><a href="#">Recursos</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Sobre Nos</a></li>
-                </ul>
-            </div>
-            <div class="Pesquisa">
-                <input type="search" name="pesquisa" id="pesquisa">
-                <img src="img/lupa-img.png">
-            </div>
-        </div>
-    </nav>
     <section>
         <div class="conteudo">
-            <div class="imagens">
-                <div class="img-dinamicas">
-                    <img src="img/img-conteudo.jpg">
-                    <h2>Futuro da Nação</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+            <div class="img-slider">
+                <div class="imagens">
+                    <img id="ultimaImg" src="../img/img-conteudo3.jpg">
+                    <img src="../img/img-conteudo2.jpg">
+                    <img src="../img/img-conteudo.jpg">
+                    <img src="../img/img-conteudo3.jpg">
+                    <img id="primeiraImg" src="../img/img-conteudo2.jpg">
                 </div>
-                <img style="transform: rotate(540deg);" src="img/seta-direita-esquerda.png">
-                <img src="img/seta-direita-esquerda.png">
+                <img class="seta-esquerda" src="../img/seta-direita-esquerda.png">
+                <img class="seta-direita" src="../img/seta-direita-esquerda.png">
             </div>
-            <div class="seleções">
+            <div class="selecoes">
                 <div class="selecione">
-                    <h3>Introdução</h3>
+                    <h3>Introduction</h3>
                     <i>&#9729;</i>
                 </div>
                 <div class="selecione">
-                    <h3>Galeria</h3>
+                    <h3>Gallery</h3>
                     <i>&#9730;</i>
                 </div>
                 <div class="selecione">
-                    <h3>Depoimentos</h3>
+                    <h3>Testimonials</h3>
                     <i>&#9786;</i>
                 </div>
                 <div class="selecione">
-                    <h3>Sobre</h3>
+                    <h3>About</h3>
                     <i>&#9731;</i>
                 </div>
                 <div class="selecione">
-                    <h3>Contato</h3>
+                    <h3>Contact</h3>
                     <i>&#9993;</i>
                 </div>
             </div>
             <div class="texto">
                 <ul>
                     <li>
-                        <h3>Introdução</h3>
+                        <h3>Introduction</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quo nobis veritatis ratione nam delectus veniam dignissimos, nemo ipsa voluptas corrupti cupiditate assumenda consequuntur labore rem reiciendis quis architecto repudiandae?</p>
                     </li>
                     <li>
-                        <h3>Sobre</h3>
+                        <h3>About</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias natus explicabo harum nulla. Minima necessitatibus autem alias temporibus modi ad perspiciatis sint suscipit? Aut omnis minus neque distinctio ducimus aliquam!</p>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <h3>Informaçoes</h3>
+                        <h3>Information</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et sapiente iusto rerum voluptas aspernatur culpa sit quaerat corrupti repellendus mollitia maiores at perferendis deserunt repellat, eos assumenda dicta suscipit molestiae!</p>
                     </li>
                     <li>
-                        <h3>Depoimentos</h3>
+                        <h3>Testimonials</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat, fugit aperiam aliquam aut expedita aliquid! Nam numquam consectetur nobis sapiente magni, officiis repellat accusantium, ut exercitationem modi sed dolor?</p>
                     </li>
                 </ul>
             </div>
             <div class="galeria">
-                <h2>Galeria</h2>
+                <h2>Gallery</h2>
                 <div class="paisagemCampo1">
-                    <img src="img/paisagem-praia.jpg" alt="praia-img">
-                    <img src="img/paisagem-campo.jpg" alt="campo-img">
+                    <img src="../img/paisagem-praia.jpg" alt="praia-img">
+                    <img src="../img/paisagem-campo.jpg" alt="campo-img">
                 </div>
                 <div class="paisagemCampo2">
-                    <img src="img/paisagem-rio.jpg" alt="rio-img">
-                    <img src="img/paisagem-tropical.jpg" alt="tropical-img">
+                    <img src="../img/paisagem-rio.jpg" alt="rio-img">
+                    <img src="../img/paisagem-tropical.jpg" alt="tropical-img">
                 </div>
             </div>
             <div class="copyright">
@@ -114,39 +123,39 @@
     <footer>
         <div class="rodape">
             <ul>
-                <li><h3>Sobre a Compania</h3></li>
-                <li><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam distinctio voluptatem aliquid quo recusandae, repellendus at odit, repellat consequatur.</p></li>
+                <li><h3>About the Company</h3></li>
+                <li><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Nam distinctio voluptatem aliquid quo recusandae, <br> repellendus at odit, repellat consequatur.</p></li>
             </ul>
             <ul>
-                <li><h3>Produtos</h3></li>
+                <li><h3>Products</h3></li>
                 <li><p>Lorem ipsum dolor.</p></li>
                 <li><p>Amet consectetur.</p></li>
                 <li><p>Sed recusandae quisquam.</p></li>
                 <li><p>explicabo consequuntur.</p></li>
             </ul>
             <ul>
-                <li><h3>Links Úteis</h3></li>
+                <li><h3>Useful Links</h3></li>
                 <li><a href="#">Sua Conta</a></li>
                 <li><a href="#">Se torne Membro</a></li>
                 <li><a href="#">Taxas de Envio</a></li>
                 <li><a href="#">Ajuda</a></li>
             </ul>
             <ul>
-                <li><h3>Contato</h3></li>
+                <li><h3>Contact</h3></li>
                 <li>
-                    <img src="img/simbolo-casa.png">
+                    <img src="../img/simbolo-casa.png">
                     <p>New York, NY 10012, US</p>
                 </li>
                 <li>
-                    <img src="img/simbolo-carta.png">
+                    <img src="../img/simbolo-carta.png">
                     <p>info@example.com</p>
                 </li>
                 <li>
-                    <img src="img/simbolo-telefone.png">
+                    <img src="../img/simbolo-telefone.png">
                     <p>+01 234 567 88</p>
                 </li>
                 <li>
-                    <img src="img/simbolo-telefone2.png">
+                    <img src="../img/simbolo-telefone2.png">
                     <p>+01 234 567 89</p>
                 </li>
             </ul>
