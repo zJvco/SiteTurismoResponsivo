@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Meu Site</title>
 </head>
 <body>
@@ -15,12 +16,14 @@
             </div>
             <div class="login">
                 <div class="bandeiras">
-                    <a href="index.html"><img src="img/bandeira-BR.png"></a>
-                    <a href="IndexEUA.html"><img src="img/bandeira-EUA.png"></a>
+                    <a class="img-BR" href="index.html"><img src="img/bandeira-BR.png"></a>
+                    <a class="img-EUA" href="indexEUA.html"><img src="img/bandeira-EUA.png"></a>
                     <button class="seta"><img src="img/seta-img.png"></button>
                 </div>
-                <a href="#">LOGIN</a>
-                <a href="#">CADASTRAR-SE</a>
+                <div class="login-cadastro">
+                    <a href="#">LOGIN</a>
+                    <a href="#">CADASTRAR-SE</a>
+                </div>
             </div>
         </div>
     </header>
@@ -31,25 +34,25 @@
                     <li><a href="#">Casa</a></li>
                     <li><a href="#">Recursos</a></li>
                     <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Sobre Nos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
                 </ul>
             </div>
-            <div class="Pesquisa">
-                <input type="search" name="pesquisa" id="pesquisa">
+            <div class="pesquisa">
+                <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisa">
                 <img src="img/lupa-img.png">
             </div>
         </div>
     </nav>
     <section>
         <div class="conteudo">
-            <div class="imagens">
-                <div class="img-dinamicas">
+            <div class="img-dinamicas">
+                <div class="imagens">
                     <img src="img/img-conteudo.jpg">
-                    <h2>Futuro da Nação</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
                 </div>
-                <img style="transform: rotate(540deg);" src="img/seta-direita-esquerda.png">
-                <img src="img/seta-direita-esquerda.png">
+                <h2>Futuro da Nação</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> At illo, repellendus nihil cupiditate ipsum a animi <br> dolorem eveniet doloribus aliquid maiores labore vitae <br> laudantium voluptatum delectus dignissimos, vel nemo <br> voluptate!</p>
+                <img class="seta-esquerda" src="img/seta-direita-esquerda.png">
+                <img class="seta-direita" src="img/seta-direita-esquerda.png">
             </div>
             <div class="seleções">
                 <div class="selecione">

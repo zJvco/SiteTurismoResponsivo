@@ -4,4 +4,177 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Parte do Logo e Login */
+.topo {
+    margin: 5px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    cursor: default;
+    color: #5499C7;
+    text-shadow: 5px 5px 5px #a7a7a7;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.bandeiras {
+    position: relative;
+    top: -8px;
+    right: 30px;
+}
+
+.bandeiras a > img {
+    width: 25px;
+    height: 15px;
+}
+
+.img-BR {
+    position: absolute;
+    right: 7px;
+}
+
+.img-EUA {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 7px;
+}
+
+.bandeiras button {
+    position: absolute;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bandeiras button img {
+    width: 13px;
+    height: 8px;
+}
+
+.login-cadastro {
+
+}
+
+.login-cadastro a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.login-cadastro a:hover {
+    color: #ccc;
+}
+
+/* Parte da Navegação */
+.navBar {
+    display: flex;
+    padding: 30px 300px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5499C7;
+}
+
+.navLinks {
+    width: 80%;
+}
+
+.navLinks ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navLinks ul li {
+}
+
+.navLinks ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.navLinks ul li a:hover {
+    color: #ccc;
+}
+
+.pesquisa {
+    position: relative;
+}
+
+.pesquisa input {
+    height: 25px;
+    outline: none;
+    border: none;
+    padding: 5px 25px 5px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.pesquisa input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.pesquisa img {
+    position: absolute;
+    right: 2.7px;
+    top: 2.7px;
+    width: 18px;
+}
+
+/* Parte do Conteudo do Site */
+.img-dinamicas {
+    position: relative;
+}
+
+.imagens img {
+    width: 100%;
+    height: 650px;
+}
+
+.img-dinamicas h2 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.img-dinamicas p {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.seta-esquerda {
+    transform: rotate(180deg);
+    width: 60px;
+    position: absolute;
+    top: 43%;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.seta-direita {
+    width: 60px;
+    position: absolute;
+    top: 43%;
+    right: 0;
+    cursor: pointer;
+    opacity: 0.3;
 }
