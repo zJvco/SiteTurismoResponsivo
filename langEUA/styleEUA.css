@@ -20,7 +20,7 @@ body {
     cursor: default;
     color: #5499C7;
     font-family: "Poppins";
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .login {
@@ -102,10 +102,11 @@ nav {
 }
 
 .navLinks ul li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #5499C7;
     font-family: "Poppins";
+    font-weight: bold;
 }
 
 .navLinks ul li a:hover {

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to left, #5499C7, #2980B9);
+    font-family: "Poppins";
+}
+
+.container {
+    display: flex;
+    margin: 185px auto;
+    background-color: #FFF;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+.conteudo {
+    padding: 60px 80px;
+    width: 480px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo p {
+    color: #a8a8a8;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #5499C7;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+.preencher {
+    margin-bottom: 20px;
+}
+
+.preencher label {
+    display: block;
+    font-weight: bold;
+}
+
+.preencher input {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.senha {
+    position: relative;
+}
+
+.preencher a {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    text-decoration: none;
+    color: #5499C7;
+    font-size: 13px;
+}
+
+.preencher a:hover {
+    text-decoration: underline;
+}
+
+.chechar {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.chechar input {
+    margin-right: 8px;
+}
+
+.chechar label {
+    font-size: 15px;
+}
+
+.botaoEntrar {
+    margin-bottom: 40px;
+}
+
+.botaoEntrar button {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: #FFF;
+    background-color: #5499C7;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.botaoEntrar button:hover {
+    background-color: #2980B9;
+}
+
+.metodoLogin {
+    display: flex;
+    justify-content: space-around;
+}
+
+.google a {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #E67E22;
+    color: #E67E22;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.google a:active {
+    opacity: 0.5;
+}
+
+.google a img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.facebook a {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #2874A6;
+    color: #2874A6;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 140px;
+    border-radius: 5px;
+
+}
+
+.facebook a:active {
+    opacity: 0.5;
+}
+
+.facebook a img {
+    width: 12px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.imagem-turismo {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-turismo img {
+    width: 650px;
+}
+
+/* Copyright */
+.copyright i {
+    color: #ccc;
+    font-size: 14px;
+}
