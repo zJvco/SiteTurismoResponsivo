@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
     <link rel="shortcut icon" href="../../img/favicon.jpg" type="image/x-icon">
     <title>Login</title>
 </head>
@@ -15,22 +16,28 @@
                 <h1>Login</h1>
                 <p>Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
             </div>
-            <form action="../index.html">
-                <div class="preencher login">
+            <form action="../index.html" id="form">
+                <div class="preencher">
                     <label>Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="text" name="email" id="email">
+                    <img id="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                    <img id="erro-alerta" src="../../img/erro-alerta.png">
+                    <span class="txtErroEmail">Mensagem de Erro</span>
                 </div>
-                <div class="preencher senha">
+                <div class="preencher">
                     <label>Senha</label>
                     <a href="#">Esqueceu a senha?</a>
                     <input type="password" name="senha" id="senha">
+                    <img id="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                    <img id="erro-alerta" src="../../img/erro-alerta.png">
+                    <span class="txtErroSenha">Mensagem de Erro</span>
                 </div>
                 <div class="chechar">
                     <input type="checkbox" name="checkbox" id="checkbox">
                     <label>Lembre-me</label>
                 </div>
                 <div class="botaoEntrar">
-                    <button>ENTRAR</button>
+                    <button class="btnEntrar">ENTRAR</button>
                 </div>
             </form>
             <div class="metodoLogin">
