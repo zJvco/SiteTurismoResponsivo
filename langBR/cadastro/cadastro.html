@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Cadastro</h1>
+        </div>
+        <form action="../login/login.html" id="form">
+            <div class="preencher nome-sobrenome">
+                <div class="preencher nome">
+                    <label>Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <img class="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                    <img class="erro-alerta" src="../../img/erro-alerta.png">
+                    <span>Mensagem de Erro</span>
+                </div>
+                <div class="preencher sobrenome">
+                    <label>Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                    <img class="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                    <img class="erro-alerta" src="../../img/erro-alerta.png">
+                    <span>Mensagem de Erro</span>
+                </div>
+            </div>
+            <div class="preencher">
+                <label>Email</label>
+                <input type="text" name="email" id="email">
+                <img class="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                <img class="erro-alerta" src="../../img/erro-alerta.png">
+                <span>Mensagem de Erro</span>
+            </div>
+            <div class="preencher">
+                <label>Senha</label>
+                <input type="password" name="senha" id="senha">
+                <img class="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                <img class="erro-alerta" src="../../img/erro-alerta.png">
+                <span>Mensagem de Erro</span>
+            </div>
+            <div class="preencher">
+                <label>Confirme a Senha</label>
+                <input type="password" name="senha2" id="senha2">
+                <img class="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                <img class="erro-alerta" src="../../img/erro-alerta.png">
+                <span>Mensagem de Erro</span>
+            </div>
+            <div class="container-check">
+                <div class="check1">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label>Ao marcar a caixa você está de acordo com as nossas <a href="#">Políticas de uso de Dados.</a></label>
+                </div>
+                <div class="check2">
+                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                    <label>Ao marcar a caixa você estará de acordo com as nossas <a href="#">Políticas de Cookies.</a></label>
+                </div>
+            </div>
+            <div class="botaoCadastrar">
+                <button>CADASTRAR</button>
+            </div>
+            <div class="login">
+                <p>Já tem uma conta? <a href="../login/login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="copyright">
+        <i>Copyright &copy; João Victor, Inc. all rights reserved.</i>
+    </div>
+</body>
+</html>

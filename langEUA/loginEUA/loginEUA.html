@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleLoginEUA.css">
+    <script src="loginEUA.js" defer></script>
     <link rel="shortcut icon" href="../../img/favicon.jpg" type="image/x-icon">
     <title>Login</title>
 </head>
@@ -13,24 +14,30 @@
         <div class="conteudo">
             <div class="logo">
                 <h1>Login</h1>
-                <p>Not have an account yet? <a href="#">Sign Up</a></p>
+                <p>Not have an account yet? <a href="../cadastroEUA/cadastroEUA.html">Sign Up</a></p>
             </div>
-            <form action="../indexEUA.html">
-                <div class="preencher login">
+            <form action="../indexEUA.html" id="form">
+                <div class="preencher">
                     <label>Email address</label>
-                    <input type="email" name="email" id="email">
+                    <input type="text" name="email" id="email">
+                    <img id="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                    <img id="erro-alerta" src="../../img/erro-alerta.png">
+                    <span>Error Message</span>
                 </div>
-                <div class="preencher senha">
+                <div class="preencher">
                     <label>Password</label>
                     <a href="#">Forgot password?</a>
                     <input type="password" name="senha" id="senha">
+                    <img id="sucesso-alerta" src="../../img/sucesso-alerta.png">
+                    <img id="erro-alerta" src="../../img/erro-alerta.png">
+                    <span>Error Message</span>
                 </div>
                 <div class="chechar">
                     <input type="checkbox" name="checkbox" id="checkbox">
                     <label>Remember me</label>
                 </div>
                 <div class="botaoEntrar">
-                    <button>LOGIN</button>
+                    <button class="btnEntrar">LOGIN</button>
                 </div>
             </form>
             <div class="metodoLogin">

@@ -20,10 +20,10 @@ function verificarLogin() {
     // Validar Email
     if (emailValue === '') {
         // definir função erro
-        definirErro(email, 'Preencha o Campo!')
+        definirErro(email, 'Fill the fild above!')
     }
     else if (!validarEmail(emailValue)) {
-        definirErro(email, 'Email Inválido!')
+        definirErro(email, 'Invalid Email!')
     }
     else {
         // definir função sucesso
@@ -34,7 +34,7 @@ function verificarLogin() {
     // Validar Senha
     if (senhaValue === '') {
         // definir função erro
-        definirErro(senha, 'Preencha o Campo!') 
+        definirErro(senha, 'Fill the fild above!') 
     }
     else {
         // definir função sucesso

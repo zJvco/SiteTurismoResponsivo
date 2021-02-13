@@ -127,17 +127,6 @@ body {
     visibility: visible;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .chechar {
     margin: 20px 0;
     display: flex;
@@ -242,4 +231,10 @@ body {
     color: #ccc;
     font-size: 14px;
     cursor: default;
+}
+
+@media screen and (max-width: 1200px) {
+    .imagem-turismo {
+        display: none;
+    }
 }

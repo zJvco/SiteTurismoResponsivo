@@ -24,11 +24,14 @@ body {
 
 .conteudo {
     padding: 60px 80px;
-    width: 480px;
 }
 
 .logo {
     margin-bottom: 20px;
+}
+
+.logo h1 {
+    cursor: default;
 }
 
 .logo p {
@@ -46,6 +49,7 @@ body {
 
 .preencher {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .preencher label {
@@ -61,6 +65,7 @@ body {
     outline: none;
     border: 1px solid #ccc;
     border-radius: 5px;
+    position: relative;
 }
 
 .senha {
@@ -78,6 +83,48 @@ body {
 
 .preencher a:hover {
     text-decoration: underline;
+}
+
+.preencher img {
+    width: 18px;
+    position: absolute;
+    right: 10px;
+    top: 37px;
+    visibility: hidden;
+}
+
+.preencher span {
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    visibility: hidden;
+}
+
+.preencher.erro span {
+    visibility: visible;
+}
+
+.preencher.sucesso input {
+    border: 1px solid #28B463;
+    padding-right: 30px;
+    visibility: visible;
+}
+
+.preencher.sucesso img#sucesso-alerta {
+    visibility: visible;
+}
+
+.preencher.erro input {
+    border: 1px solid #E74C3C;
+    padding-right: 30px;
+    visibility: visible;
+}
+
+.preencher.erro img#erro-alerta {
+    visibility: visible;
 }
 
 .chechar {
@@ -121,6 +168,10 @@ body {
     justify-content: space-around;
 }
 
+.google {
+    margin-right: 10px;
+}
+
 .google a {
     text-decoration: none;
     padding: 10px 30px;
@@ -142,6 +193,10 @@ body {
 .google a img {
     width: 18px;
     margin-right: 10px;
+}
+
+.facebook {
+    margin-left: 10px;
 }
 
 .facebook a {
@@ -183,4 +238,11 @@ body {
 .copyright i {
     color: #ccc;
     font-size: 14px;
+    cursor: default;
+}
+
+@media screen and (max-width: 1200px) {
+    .imagem-turismo {
+        display: none;
+    }
 }
